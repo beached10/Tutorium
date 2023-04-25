@@ -1,0 +1,131 @@
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.tabs {
+	margin-top: 50px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+li {
+	padding: 10px;
+}
+
+li.active {
+	border-bottom: 2px solid #000;
+}
+
+.tab-content {
+	margin-top: 50px;
+}
+
+#delete-account-section {
+	text-align: center;
+}
+
+.content {
+	margin-top: 20px;
+}
+
+button-section {
+	margin-top: 30px;
+}
+
+.button {
+	padding: 10px 20px;
+	margin-right: 10px;
+	background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #0069d9;
+}
+
+.container {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.tabs {
+margin-top: 30px;
+}
+
+.tabs ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+border-bottom: 2px solid #007bff;
+}
+
+.tabs li {
+float: left;
+}
+
+.tabs li a {
+display: block;
+color: #007bff;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.tabs li a:hover:not(.active) {
+background-color: #f2f2f2;
+}
+
+.tabs .active a {
+background-color: #007bff;
+color: white;
+}
+
+.tab-content {
+padding: 20px;
+border: 2px solid #007bff;
+border-top: none;
+}
+
+.tab-content {
+	padding: 20px;
+	border: 2px solid #dc3545;
+	border-top: none;
+}
+
+.delete-account-btn {
+	background-color: #dc3545;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.delete-account-btn:hover {
+	background-color: #c82333;
+}
+
+.cancel-delete-account-btn {
+	background-color: #fff;
+	color: #dc3545;
+	border: 1px solid #dc3545;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.cancel-delete-account-btn:hover {
+	background-color: #dc3545;
+	color: #fff;
+}

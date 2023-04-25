@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account Security</title>
+	<link rel="stylesheet" type="text/css" href="../../public/css/AccountSettings.css">
+	<!-- Link to Font Awesome for icons -->
+	<link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js">
+</head>
+<body>
+    <header>
+        <!-- Header content here -->
+    </header>
+  
+    <main class="container">
+      <div class="tabs">
+        <ul>
+          <li><a href="about.html" id="about-link">About</a></li>
+          <li><a href="education.html" id="education-link">Education</a></li>
+          <li><a href="experience.html" id="experience-link">Experience</a></li>
+          <li><a href="skills.html" id="skills-link">Skills</a></li>
+          <li><a href="./NotiSettings.html" id="notification-settings-link">Notification</a></li>
+          <li class="active"><a href="#" id="account-security-link">Account Security</a></li>
+          <li><a href="./DeleteAcount.html" id="delete-account-link">Delete Account</a></li>
+        </ul>
+      </div>
+  
+      <!-- Email Form -->
+      <h2>Email</h2>
+      <form id="email-form">
+        
+        <label for="current-email">Email:</label>
+        <input type="email" id="current-email" name="current-email" readonly>
+
+        <label for="new-email">New Email:</label>
+        <input type="email" id="new-email" name="new-email">
+  
+        <div class="button-container">
+            <button type="submit">Save Changes</button>
+            <button type="button" id="cancel-password-button">Cancel</button>
+          </div>
+      </form>
+  
+      <!-- Password Form -->
+      <h2>Password</h2>
+      <form id="password-form">
+        <label for="current-password">Current Password:</label>
+        <input type="password" id="current-password" name="current-password" required>
+  
+        <label for="new-password">New Password:</label>
+        <input type="password" id="new-password" name="new-password" required>
+  
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+  
+        <div class="button-container">
+            <button type="submit">Save Changes</button>
+            <button type="button" id="cancel-password-button">Cancel</button>
+          </div>
+      </form>
+  
+    </main>
+  
+    <script src="account-security.js"></script>
+  
+    <!-- Script tag at the end to ensure that the HTML has loaded before the script -->
+    <script src="../../public/js/AccountSettings.js"></script>
+</body>
+</html>

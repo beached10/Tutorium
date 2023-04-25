@@ -1,0 +1,10 @@
+(contains your application's logic or controllers for each model or component)
+
+Controllers
+
+authController.js   (contains the authentication logic for the login and registration pages)
+courseController.js   (contains the logic for creating, updating, and deleting courses)
+streamController.js   (contains the logic for creating, updating, and deleting live streams)
+messageController.js   (contains the logic for creating, sending, and receiving messages)
+subscriptionController.js   (contains the logic for managing the premium subscription plan)
+userController.js   (contains the logic for managing user accounts and profiles)

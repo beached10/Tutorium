@@ -1,0 +1,26 @@
+(contains your website's templates or views)
+
+LAYOUTS
+
+main.handlebars   (the main layout template for your website)
+dashboard.handlebars   (the layout template for the dashboard pages)
+
+PAGES
+
+login.handlebars   (the login page template)
+register.handlebars   (the registration page template)
+courses.handlebars   (the courses and live streams page template)
+messaging.handlebars   (the messaging system page template)
+premium.handlebars   (the premium subscription plan page template)
+dashboard.handlebars   (the dashboard page template)
+profile.handlebars   (the user profile page template)
+course.handlebars   (the course details page template)
+live-stream.handlebars   (the live stream details page template)
+
+PARTIALS
+
+header.handlebars   (the header partial template)
+footer.handlebars   (the footer partial template)
+navbar.handlebars   (the navigation bar partial template)
+alert.handlebars   (the alert message partial template)
+sidebar.handlebars   (the sidebar partial template for the dashboard pages)
