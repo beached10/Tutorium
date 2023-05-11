@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tutorium</title>
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    
+  </head>
+  <header class="header">
+    <div class="header-left"><!-- Add interaction to logo -->
+      <a href="#" class="header-logo"><img src="#" alt="Tutorium"></a>
+      <nav class="header-navigation">
+        <ul class="header-navigation-list">
+          <li class="header-navigation-item">
+            <a href="#" class="header-navigation-link">Categories</a>
+            <ul class="header-sub-navigation-list"><!-- when you hover over categories or click it the courses should show up and can select it.Add interaction -->
+              <li class="header-sub-navigation-item"><a href="#" class="header-sub-navigation-link">Math</a></li>
+              <li class="header-sub-navigation-item"><a href="#" class="header-sub-navigation-link">Science</a></li>
+              <li class="header-sub-navigation-item"><a href="#" class="header-sub-navigation-link">Programming</a></li>
+              <li class="header-sub-navigation-item"><a href="#" class="header-sub-navigation-link">IT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-middle">
+      <form class="header-search-form" action="#">
+        <input type="text" class="header-search-input" placeholder="Search..."><!-- Add interaction to search-icon and it should be inside 
+          header-search-input on the right middle side-->
+        <button type="submit" class="header-search-button"><img src="./img/search-icon.png" alt="search-icon"></button>
+      </form>
+    </div>
+    <div class="header-right">
+      <div class="header-notification"><!-- Once logged in Both student and tutor should be able to see the notification-icon-none if 
+        they still do not have any notifications; the later once they do, they should see notification-icon-available, but again once they have read all 
+        notifications it should revert to the first notification icon -->
+        <a href="./notification-view.html" class="header-notification-icon-none" style="display:none;"><img src="./img/bell.png" alt="notification-icon-none"></a><!-- resize notification-icon-none to perfect size for header icon and give it interaction-->
+        <a href="./notification-view.html" class="header-notification-icon-available" style="display:none;"><img src="./img/bell-on.png" alt="notification-icon-available"></a><!-- resize notification-icon-available to perfect size for header icon and give it shake interaction -->
+      </div>
+      <div class="header-account"><!-- Add interaction to Login-->
+        <a href="../account/login.html" class="header-account-link">Login</a><!-- Both student and tutor will see login if not logged in but once logged 
+          in they should see header-account-link which is an icon and that will contain a dashboard when 
+          they hover or click it with a variety of features like account settings, logout etc -->
+        <a href="#" class="header-account-link" style="display:none;"><img src="./img/profile-icon.png" alt="profile-icon"></a><!-- resize profile-icon to perfect size for header icon and give it interaction-->
+      </div>
+      <div class="header-get-started"><!-- Both student and tutor will see get started if not logged in but once logged 
+        in they should see header-get-followers-link which is an icon -->
+        <a href="../account/signup.html" class="header-get-started-link" >Get Started</a><!-- Add interaction to Get started-->
+        <a href="#" class="header-get-followers-link" style="display:none;"><img src="./img/followers-icon.png" alt="follow-icon"></a><!-- resize follow-icon to perfect size for header icon and give it interaction -->
+      </div>
+    </div>
+  </header>
+    
+    <script src="./js/header-buttons.js"></script>
+  </body>
+</html>

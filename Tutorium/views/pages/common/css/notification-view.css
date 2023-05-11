@@ -1,0 +1,213 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Notification view styles */
+.notification-view {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.notification-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.notification-filter {
+  margin-right: 1rem;
+}
+
+.notification-filter label {
+  margin-right: 0.5rem;
+}
+
+.notification-filter select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+}
+
+.notification-filter select:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.notification-mark-all-btn, .notification-delete-all-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+.notification-mark-all-btn:hover, .notification-delete-all-btn:hover {
+  background-color: #444;
+}
+
+.notification-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.notification-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.notification-item:hover {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.notification-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.notification-details {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.notification-content {
+  flex-grow: 1;
+}
+
+.notification-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.notification-description {
+  margin-bottom: 0.5rem;
+}
+.notification-content a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.notification-time {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.notification-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.notification-delete-btn, .notification-mark-important-btn, .notification-mute-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.notification-delete-btn:hover, .notification-mark-important-btn:hover, .notification-mute-btn:hover {
+  background-color: #f7f7f7;
+  color:#555;
+  border: 1px solid #ddd;
+  }
+  
+  .notification-delete-btn:focus, .notification-mark-important-btn:focus, .notification-mute-btn:focus {
+  outline: none;
+  border-color: #555;
+  }
+  
+  .notification-mark-important-btn {
+  background-color: #ffa500;
+  color: #fff;
+  }
+  
+  .notification-mark-important-btn:hover {
+  background-color: #ff8c00;
+  }
+  
+  .notification-mute-btn {
+  background-color: #ddd;
+  color: #333;
+  }
+  
+  .notification-mute-btn:hover {
+  background-color: #bbb;
+  }
+  
+  .notification-mute-btn.muted {
+  background-color: #777;
+  color: #fff;
+  }
+
+  .notification-unread-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .notification-unread-btn:hover {
+    background-color: #f7f7f7;
+  }
+  
+
+  .notification-item.notification-read .notification-content,
+  .notification-item.notification-read .notification-actions button,
+  .notification-item.notification-read {
+  opacity: 0.5;
+  }
+  .notification-item.read .notification-title {
+    font-weight: normal;
+  }
+  
+  .notification-item.read .notification-actions .notification-unread-btn {
+    display: inline-block;
+  }
+  
+  

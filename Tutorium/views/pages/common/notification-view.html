@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications</title>
+  <link rel="stylesheet" type="text/css" href="./css/notification-view.css">
+</head>
+<body>
+  <section id="student-notifications" class="notification-view">
+    <div class="notification-header">
+      <h1>Notifications</h1>
+      <div class="notification-controls">
+          <div class="notification-filter">
+            <label for="filter-select">Filter By:</label>
+            <select id="filter-select">
+              <option value="name-asc">Name: A to Z</option>
+              <option value="name-desc">Name: Z to A</option>
+              <option value="date-desc">Date: Newest to Oldest</option>
+              <option value="date-asc">Date: Oldest to Newest</option>
+            </select>
+            
+          </div>        
+        </div>
+        <button class="notification-mark-all-btn">Mark All Read</button>
+        <button class="notification-delete-all-btn">Delete All</button>
+      </div>
+    </div>
+    <div id="notification-list">
+      <!-- Dynamic content for student or Tutor notifications -->
+      <div class="notification-item">
+        <a href="#" class="notification-link">
+          <div class="notification-details">
+            <div class="notification-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="notification-content">
+              <div class="notification-title">
+                <a href="#">Subscription notice</a>
+              </div>
+              <div class="notification-description">
+                <a href="#">Your subscription will end soon</a></div>
+              <div class="notification-time">1 day ago</div>
+            </div>
+          </div>
+          <div class="notification-actions">
+            <button class="notification-unread-btn">Unread</button>
+            <button class="notification-delete-btn">Delete</button>
+            <button class="notification-mark-important-btn">Mark as Important</button>
+            <button class="notification-mute-btn">Mute</button>
+          </div>
+        </a>
+      </div>
+      <div class="notification-item">
+        <a href="#" class="notification-link">
+          <div class="notification-details">
+            <div class="notification-icon">
+              <i class="fa fa-bell"></i>
+            </div>
+            <div class="notification-content">
+              <div class="notification-title">
+                <a href="#">Tutor: Mark</a>
+              </div>
+              <div class="notification-description">
+                <a href="#">Okay. What did you want to ask.</a></div>
+              <div class="notification-time">1 day ago</div>
+            </div>
+          </div>
+          <div class="notification-actions">
+            <button class="notification-unread-btn">Unread</button>
+            <button class="notification-delete-btn">Delete</button>
+            <button class="notification-mark-important-btn">Mark as Important</button>
+            <button class="notification-mute-btn">Mute</button>
+          </div>
+        </a>
+      </div>
+      <!-- More notification items will be added here dynamically -->
+      <!-- Announcement for upcoming events or webinars -->
+      <!-- Payment confirmation or subscription renewal notice -->
+      <!-- Account security alerts, such as login attempts from new devices or unusual activity detected -->
+    </div>
+  </section>
+  <script src="./js/notification-view.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>payment-method</title>
+	<link rel="stylesheet" type="text/css" href="../subscription/css/payment-method.css">
+    
+</head>
+<body>
+    <header>
+    </header>
+    
+	<main role="main">
+		<div class="container">
+			
+			<div class="card-method" role="region" aria-labelledby="card-method-heading" aria-hidden="true">
+                <div class="payment-methods" role="region" aria-labelledby="payment-methods-heading">
+					<h2 id="payment-methods-heading">Choose payment method:</h2>
+					<div class="payment-select">
+                        <ul class="payment-type">
+                          <li>
+                            <input type="radio" id="card" name="payment-method" class="payment-radio card-radio" checked>
+                            <label for="card" class="payment-label card-label" data-target="card.html">Card</label>
+                          </li>
+                          <li>
+                            <input type="radio" id="paypal" name="payment-method" class="payment-radio paypal-radio">
+                            <label for="paypal" class="payment-label paypal-label" data-target="paypal.html">Paypal</label>
+                          </li>
+                        </ul>
+                      </div>
+                      
+				  </div>
+                
+				<div id="card-form" class="payment-form">
+					<label for="card-type">Card Type</label>
+					<select id="card-type" name="card-type">
+						<option value="debit">Debit</option>
+						<option value="credit">Credit</option>
+					 </select>
+					<label for="card-name">Card Holder Full Name</label>
+					<input type="text" id="card-name" name="card-name" required>
+					<label for="card-number">Card Number</label>
+					<input type="text" id="card-number" name="card-number" required>
+					<label for="card-expiry">Expiry Date</label>
+					<input type="text" id="card-expiry" name="card-expiry" required>
+					<label for="card-cvc">CVC</label>
+					<input type="text" id="card-cvc" name="card-cvc" required>
+					<button class="submit-payment" data-method="card">Pay</button>
+                </div>
+            </div>
+
+            <div class="confirm-message" role="alert" aria-hidden="true">
+                <p>Do you want to continue with the transaction?</p>
+                <input type="radio" id="confirm" name="confirm" class="yes">
+                <input type="radio" id="cancel" name="cancel" class="no">
+                
+            <div class="success-message" role="alert" aria-hidden="true">
+                <p>Your payment was successful!</p></div>
+
+            <div class="error-message" role="alert" aria-hidden="true">
+                <p>There was an error processing your payment. Please try again.</p></div>
+
+        </div>
+    </main>
+        
+    <footer>
+    </footer>
+    <script type="text/javascript" src="./js/payment-method.js"></script> 
+</body>
+</html>

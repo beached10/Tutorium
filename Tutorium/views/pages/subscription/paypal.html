@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>payment-method</title>
+	<link rel="stylesheet" type="text/css" href="../subscription/css/payment-method.css">
+   
+</head>
+<body>
+    <header>
+    </header>
+    
+	<main role="main">
+		<div class="container">
+            <div class="paypal-method" role="region" aria-labelledby="paypal-method-heading" aria-hidden="true">
+                <div class="payment-methods" role="region" aria-labelledby="payment-methods-heading">
+					<h2 id="payment-methods-heading">Choose payment method:</h2>
+					<div class="payment-select">
+                        <ul class="payment-type">
+                          <li>
+                            <input type="radio" id="card" name="payment-method" class="payment-radio card-radio">
+                            <label for="card" class="payment-label card-label" data-target="card.html">Card</label>
+                          </li>
+                          <li>
+                            <input type="radio" id="paypal" name="payment-method" class="payment-radio paypal-radio" checked>
+                            <label for="paypal" class="payment-label paypal-label" data-target="paypal.html">Paypal</label>
+                          </li>
+                        </ul>
+                      </div>
+                      
+				  </div>
+                  
+				
+                <div id="paypal-form" class="payment-form">
+                    <label for="paypal-email">PayPal Email</label>
+                    <input type="email" id="paypal-email" name="paypal-email" required>
+					<label for="paypal-password">PayPal Password</label>
+                    <input type="password" id="paypal-password" name="paypal-password" required>
+                    <button class="submit-payment" data-method="paypal">Pay</button>
+                </div>
+            </div>
+
+            <div class="confirm-message" role="alert" aria-hidden="true">
+                <p>Do you want to continue with the transaction?</p>
+                <button class="yes" data-method="confirm">Yes</button>
+                <button class="no" data-method="cancel">No</button></div>
+                
+            <div class="success-message" role="alert" aria-hidden="true">
+                <p>Your payment was successful!</p></div>
+
+            <div class="error-message" role="alert" aria-hidden="true">
+                <p>There was an error processing your payment. Please try again.</p></div>
+
+            
+        </div>
+      
+    </main>
+    
+    <footer>
+    </footer>
+    <script type="text/javascript" src="./js/payment-method.js"></script> 
+</body>
+</html>

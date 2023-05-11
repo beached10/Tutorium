@@ -1,0 +1,22 @@
+*(contains static assets such as images, stylesheets, and client-side JavaScript files)
+
+CSS
+
+main.css   (contains global styles for your website)
+login.css   (contains styles for the login page)
+register.css   (contains styles for the registration page)
+courses.css   (contains styles for the courses and live streams pages)
+messaging.css   (contains styles for the messaging system)
+premium.css   (contains styles for the premium subscription plan)
+
+JS
+
+main.js   (contains global JavaScript code for your website)
+courses.js   (contains JavaScript code for the courses and live streams pages)
+messaging.js   (contains JavaScript code for the messaging system)
+premium.js   (contains JavaScript code for the premium subscription plan)
+
+IMG
+
+logo.png   (contains your website's logo)
+banner.jpg   (contains a banner image for your website)

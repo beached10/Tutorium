@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="./css/message.css" />
+  </head>
+  <body>
+    <div id="chat-container">
+      <div id="chat-header">
+        <h3>message</h3>
+        <button id="close-chat-btn">X</button>
+      </div>
+      <div id="chat-message-container">
+        <div class="message-row sent">
+          <div class="message-sender">You</div>
+          <div class="message-body">Hi, can we schedule a session for next week?</div>
+          <div class="message-timestamp">2023-04-29 12:05:32</div>
+          <div class="message-actions">
+            <button class="options-btn"><i class="fa fa-ellipsis-v"></i></button>
+            <button class="copy-message-btn hidden">Copy</button>
+            <button class="edit-message-btn hidden">Edit</button>
+            <button class="delete-message-btn hidden">Delete</button>
+            
+          </div>
+          
+        </div>
+        <div class="message-row received">
+          <div class="message-sender">John Doe</div>
+          <div class="message-body">Sure, how about Tuesday at 3pm?</div>
+          <div class="message-timestamp">2023-04-29 12:10:45</div>
+          <div class="message-actions">
+            <button class="options-btn"><i class="fa fa-ellipsis-v"></i></button>
+            <button class="copy-message-btn hidden">Copy</button>
+            <button class="delete-message-btn hidden">Delete</button>
+          </div>
+          
+        </div>
+        <!-- more message rows will be appended here dynamically -->
+      </div>
+      
+      <div id="chat-input-container">
+        <div id="chat-input-buttons">
+          <label for="chat-input-file"><i class="fa fa-paperclip"></i></label>
+          <input type="file" id="chat-input-file" style="display:none;">
+          <button id="chat-input-emoji"><i class="fa fa-smile-o"></i></button>
+        </div>
+        <textarea id="chat-input" placeholder="Type your message here..."></textarea>
+        <button id="send-chat-btn">Send</button>
+      </div>
+      
+    </div>
+    <script type="text/javascript" src="./js/message.js"></script>
+  </body>
+</html>
