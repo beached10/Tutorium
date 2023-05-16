@@ -11,18 +11,22 @@
 			<div class="form-group">
 				<label for="username">Username</label>
 				<input type="text" id="username" name="username" required>
+				<span class="error-message" id="username-error"></span>
 			</div>
 			<div class="form-group">
 				<label for="email">Email</label>
 				<input type="email" id="email" name="email" required>
+				<span class="error-message" id="email-error"></span>
 			</div>
 			<div class="form-group">
 				<label for="new-password">New Password</label>
 				<input type="new-password" id="new-password" name="new-password" required>
+				<span class="error-message" id="password-error"></span>
 			</div>
 			<div class="form-group">
 				<label for="confirm-password">Confirm Password</label>
 				<input type="confirm-password" id="confirm-password" name="confirm-password" required>
+				<span class="error-message" id="confirm-password-error"></span>
 			</div>
 			<div class="form-group">
 				<label for="role">I am a:</label>
@@ -36,6 +40,7 @@
 			<p class="terms">By logging in, you agree to our <a href="../../partials/privacy-policy.html">Privacy Policy</a> and <a href="../../partials/terms-and-conditions.html">Terms of Service</a>.</p>
 		</form>
 	</div>
-	<script src="./js/account.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./js/signup.js"></script>
 </body>
 </html>
