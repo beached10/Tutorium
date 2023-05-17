@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/notifications-settings.css">
+  <title>Notifications Settings</title>
+</head>
+<body>
+  <header>
+   
+  </header>
+  <div class="settings">
+    <h2>Settings</h2>
+    
+    <div class="profile-ettings">
+      <section class="settings-section">
+        <h3>Profile Settings</h3>
+        <div class="setting-item">
+          <input type="checkbox" id="profile-visibility" class="switch" checked/>
+          <label for="profile-visibility">Your profile's public visibility:</label>
+          
+        </div>
+      </section>
+    </div>
+  
+    <div class="notification-settings">
+      <section class="settings-section">
+        <h3>Notifications Settings</h3>
+        <p>Choose notifications you would like to receive</p>
+        <div class="setting-item">
+          <input type="checkbox" id="enable-notifications" class="switch" />
+          <label for="enable-notifications">Enable Notifications</label>
+         
+        </div>
+        <div class="setting-item">
+          <input type="checkbox" id="notify-email" class="switch" />
+          <label for="notify-email">Notify me via email when logging in</label>
+          
+        </div>
+        <div class="setting-item">
+          <input type="checkbox" id="send-sms" class="switch" />
+          <label for="send-sms">Send SMS confirmation for all online payments</label>
+         
+        </div>
+        <div class="setting-item">
+          <input type="checkbox" id="check-devices" class="switch" />
+          <label for="check-devices">Check which device(s) access your account</label>
+         
+          
+        </div>
+        <div class="setting-item">
+          <input type="checkbox" id="public-profile" class="switch" />
+          <label for="public-profile">Show your profile publicly</label>
+         
+        </div>
+        <div class="setting-item">
+          <input type="checkbox" id="pop-notification-alerts" class="switch" />
+          <label for="pop-notification-alerts">Enable Pop Notification Alerts</label>
+          
+        </div>
+      </section>
+    </div>
+    
+    
+    <div class="controls">
+      <button id="save-button" class="save-btn">Save</button>
+      <button id="cancel-button" class="cancel-btn">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

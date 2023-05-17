@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/notifications.css">
+  <title>notifications</title>
+</head>
+<body>
+  <header>
+    <h1>Notifications</h1>
+    <div class="notification-options">
+      
+      <button class="select-delete-btn"><img src="./img/delete-icon.png" alt="delete"></button>
+      <button class="mark-as-read-btn"><img src="./img/read-icon.png" alt="read"></button>
+      <button class="select-all-btn"><img src="./img/select-all-icon.png" alt="mark"></button>
+        <label for="category-filter">Filter by:</label>
+        <select name="category-filter" id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="assignments">Assignments</option>
+            <option value="announcements">Announcements</option>
+            <option value="events">Events</option>
+        </select>
+        <div class="search">
+          <input type="text" id="search-bar" placeholder="search...">
+          <button type="submit"><img src="./img/search-icon.png" alt="search-icon"></button>
+        </div>
+    </div>
+</header>
+<main>
+    <ul id="notification-list" role="list">
+        <li class="notification" role="listitem">
+            <div class="notification-header">
+              <input type="checkbox" id="notification-checkbox-1" class="notification-checkbox">
+                <h2 class="notification-title">Important Notice: Exam Schedule Changed</h2>
+                <time class="notification-date" datetime="2023-05-01">May 1, 2023</time>
+            </div>
+            <p class="notification-description">The exam schedule for this semester has been changed. Please check the updated schedule on the university website.</p>
+            <div class="notification-controls">
+               
+                
+                 <button class="important-btn"><img src="./img/mark-as-important-icon.png" alt="important"></button>
+            </div>
+        </li>
+        <li class="notification" role="listitem">
+            <div class="notification-header">
+              <input type="checkbox" id="notification-checkbox-2" class="notification-checkbox">
+                <h2 class="notification-title">New Course Added: Machine Learning</h2>
+                <time class="notification-date" datetime="2023-04-28">April 28, 2023</time>
+            </div>
+            <p class="notification-description">We are excited to announce a new course, Machine Learning, which will be offered next semester. Register now to secure your spot.</p>
+            <div class="notification-controls">
+               
+              
+              <button class="important-btn"><img src="./img/mark-as-important-icon.png" alt="important"></button>
+            </div>
+        </li>
+        <li class="notification" role="listitem">
+            <div class="notification-header">
+              <input type="checkbox" id="notification-checkbox-3" class="notification-checkbox">
+                <h2 class="notification-title">Reminder: Career Fair Tomorrow</h2>
+                <time class="notification-date" datetime="2023-04-25">April 25, 2023</time>
+            </div>
+            <p class="notification-description">Don't forget to attend the career fair tomorrow, where you'll have the opportunity to meet with recruiters from top companies.</p>
+            <div class="notification-controls">
+      
+                 <button class="important-btn"><img src="./img/mark-as-important-icon.png" alt="important"></button>
+            </div>
+        </li>
+    </ul>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

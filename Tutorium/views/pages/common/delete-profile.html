@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Delete Profile</title>
+	<link rel="stylesheet" href="./css/delete-profile.css">
+    <script src="./js/delete-profile.js"></script>
+</head>
+<body>
+	<header>
+	</header>
+	<main>
+		<p class="confirm-message" style="display: none;">Are you sure you want to delete your profile?</p>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Reason for Deleting</legend>
+				<label>
+					<input type="radio" name="reason" value="not-useful">
+					Not useful
+				</label>
+				<label>
+					<input type="radio" name="reason" value="privacy">
+					Privacy concerns
+				</label>
+				<label>
+					<input type="radio" name="reason" value="other">
+					Other
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Additional Comments</legend>
+				<textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Confirm Deletion</legend>
+				<label for="confirm">
+					Type "DELETE" to confirm deletion:
+					<input type="text" name="confirm" id="confirm">
+				</label>
+			</fieldset>
+			<input type="submit" value="Delete Profile">
+		</form>
+	</main>
+	<footer>
+	</footer>
+</body>
+</html>

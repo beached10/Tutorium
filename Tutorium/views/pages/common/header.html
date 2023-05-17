@@ -1,56 +1,73 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Tutorium</title>
-    <link rel="stylesheet" type="text/css" href="./css/header.css">
-    
-  </head>
-  <header class="header">
-    <div class="header-left"><!-- Add interaction to logo -->
-      <a href="#" class="header-logo"><img src="#" alt="Tutorium"></a>
-      <nav class="header-navigation">
-        <ul class="header-navigation-list">
-          <li class="header-navigation-item">
-            <a href="#" class="header-navigation-link">Categories</a>
-            <ul class="header-sub-navigation-list"><!-- when you hover over categories or click it the courses should show up and can select it.Add interaction -->
-              <li class="header-sub-navigation-item"><a href="#" class="header-sub-navigation-link">Math</a></li>
-              <li class="header-sub-navigation-item"><a href="#" class="header-sub-navigation-link">Science</a></li>
-              <li class="header-sub-navigation-item"><a href="#" class="header-sub-navigation-link">Programming</a></li>
-              <li class="header-sub-navigation-item"><a href="#" class="header-sub-navigation-link">IT</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>header</title>
+  <link rel="stylesheet" href="./css/header.css">
+	
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="logo"> <a href="#" id="logo-link"><img src="./img/home-icon.png" alt="logo"></a></div>
     </div>
+
     <div class="header-middle">
-      <form class="header-search-form" action="#">
-        <input type="text" class="header-search-input" placeholder="Search..."><!-- Add interaction to search-icon and it should be inside 
-          header-search-input on the right middle side-->
-        <button type="submit" class="header-search-button"><img src="./img/search-icon.png" alt="search-icon"></button>
-      </form>
+      <div class="notification">
+        <a href="./notifications.html" id="notification-link"><img src="./img/notification-bell.png" alt="notification-icon"></a>
+        <span class="notification-count">2</span>
+      </div>
+      <div class="user-type">
+        <a href="#" id="user-type-link"><img src="./img/user-type.png" alt="user-type-icon"></a>
+      </div>
+     
     </div>
+    
+   
     <div class="header-right">
-      <div class="header-notification"><!-- Once logged in Both student and tutor should be able to see the notification-icon-none if 
-        they still do not have any notifications; the later once they do, they should see notification-icon-available, but again once they have read all 
-        notifications it should revert to the first notification icon -->
-        <a href="./notification-view.html" class="header-notification-icon-none" style="display:none;"><img src="./img/bell.png" alt="notification-icon-none"></a><!-- resize notification-icon-none to perfect size for header icon and give it interaction-->
-        <a href="./notification-view.html" class="header-notification-icon-available" style="display:none;"><img src="./img/bell-on.png" alt="notification-icon-available"></a><!-- resize notification-icon-available to perfect size for header icon and give it shake interaction -->
+      <div class="dashboard">
+        <img src="./img/dash-icon.png" alt="dashboard-icon" id="dashboard-icon">
+        <div class="dashboard-dropdown" id="dashboard-dropdown">
+          <ul>
+            <li><a href="#"><img src="./img/dash-icon.png" alt="dashboard-icon"> Dashboard</a></li>
+            <li><a href="../student/student-course-view.html"><img src="./img/course.png" alt="course-icon">My Courses</a></li>
+            <li><a href="../student/student-subscription-view.html"><img src="./img/subscription.png" alt="Subscription-icon">Subscription</a></li>
+            <li><a href="../student/payment-info.html"><img src="./img/payment.png" alt="Payment details-icon">Payment details</a></li>
+            <li><a href="#"><img src="./img/students.png" alt="Students-icon">Students</a></li>
+            <li><a href="../student/view-tutors.html"><img src="./img/tutor.png" alt="Tutor-icon">Tutor</a></li>
+            <li><a href="#"><img src="./img/earnings.png" alt="earnings-icon">Earnings</a></li>
+            <li><a href="#"><img src="./img/reviews.png" alt="Reviews-icon">Reviews</a></li>
+            <li><a href="#"><img src="./img/quiz.png" alt="Quiz-icon">Quiz</a></li>
+            
+          </ul>
+        </div>
       </div>
-      <div class="header-account"><!-- Add interaction to Login-->
-        <a href="../account/login.html" class="header-account-link">Login</a><!-- Both student and tutor will see login if not logged in but once logged 
-          in they should see header-account-link which is an icon and that will contain a dashboard when 
-          they hover or click it with a variety of features like account settings, logout etc -->
-        <a href="#" class="header-account-link" style="display:none;"><img src="./img/profile-icon.png" alt="profile-icon"></a><!-- resize profile-icon to perfect size for header icon and give it interaction-->
-      </div>
-      <div class="header-get-started"><!-- Both student and tutor will see get started if not logged in but once logged 
-        in they should see header-get-followers-link which is an icon -->
-        <a href="../account/signup.html" class="header-get-started-link" >Get Started</a><!-- Add interaction to Get started-->
-        <a href="#" class="header-get-followers-link" style="display:none;"><img src="./img/followers-icon.png" alt="follow-icon"></a><!-- resize follow-icon to perfect size for header icon and give it interaction -->
-      </div>
+   
+    <div class="search-bar">
+      <input type="text" placeholder="Search.." id="search-input">
+      <button type="submit" id="search-button"><img src="./img/search-icon.png" alt="search-icon"></button>
+    </div>
+    <div class="login"><a href="../account/login.html">Login</a></div>
+    <div class="user-menu">
+      <img src="./img/profile.png" alt="user-icon" id="user-icon" class="user-icon user-profile-picture">
+        <div class="user-dropdown" id="user-dropdown">
+          <div class="user-section">
+            <a href="#"><img src="./img/profile.png" alt="user-picture"></a>
+            <span class="user-name">Username</span>
+            <span class="user-role">student</span>
+          </div>
+          <ul>
+            <li><a href="../student/student-edit-profile.html"><img src="./img/edit-profile.png" alt="Edit Profile-icon">Edit Profile</a></li>
+            <li><a href="#"><img src="./img/account-settings.png" alt="Account Settings-icon">Account Settings</a></li>
+            <li><a href="#"><img src="./img/help.png" alt="Help-icon">Help</a></li>
+            <li><a href="#" id="logout-link"><img src="./img/logout.png" alt="logout-icon">Log Out</a></li>
+          </ul>
+        </div>
+    </div>
     </div>
   </header>
-    
-    <script src="./js/header-buttons.js"></script>
-  </body>
+  <script src="./js/header.js"></script>
+</body>
 </html>

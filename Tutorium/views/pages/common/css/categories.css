@@ -1,0 +1,160 @@
+/* General styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Categories section */
+  
+  .categories {
+    margin-bottom: 2rem;
+  }
+  
+  .categories h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .categories p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .category-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .category {
+    margin: 0;
+  }
+  
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    margin: 10px;
+    height: 250px;
+  }
+  
+  .category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation-name: category-hover;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes category-hover {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .category a {
+    display: block;
+    width: 100%;
+    max-height: 120px;
+    max-width: 120px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  
+  .category img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    padding-top: 10px;
+  }
+  
+  .category label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .category p {
+    margin-top: 0.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .view-all-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #159ce0;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 0 auto 1rem;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #0586c7;
+    animation: none;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+    }
+    
+    /* Media queries */
+    
+    @media (max-width: 768px) {
+    .category-list {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .category-list {
+    grid-template-columns: 1fr;
+    }
+    }
+    
+    
+  
