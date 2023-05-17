@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Course View</title>
+	<!-- Add CSS stylesheet link here -->
+	<link rel="stylesheet" type="text/css" href="./css/student-course-view.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="header">
+		<h2>My Course List</h2>
+		<div class="stats">
+			<p>Total Courses</p>
+			<p>9</p>
+			<p>Complete Lessons</p>
+			<p>52</p>
+			<p>Achieved Certificates</p>
+			<p>8</p>
+		</div>
+	</div>
+	<div class="courses">
+		<div class="search-bar">
+			<label for="search-input">Search</label>
+			<input type="text" id="search-input" name="search-input" placeholder="Enter search term">
+		</div>
+		<div class="filter-bar">
+			<label for="category-select">Filter by Category:</label>
+			<select id="category-select" name="category-select">
+				<option value="all">All</option>
+				<option value="development">Development</option>
+				<option value="design">Design</option>
+				<option value="marketing">Marketing</option>
+			</select>
+		</div>
+		<div class="sort-bar">
+			<label for="sort-select">Sort by:</label>
+			<select id="sort-select" name="sort-select">
+				<option value="free">Free</option>
+				<option value="popular">Most popular</option>
+				<option value="viewed">Most viewed</option>
+				<option value="newest">Newest</option>
+			</select>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>Course Title</th>
+					<th>Total Lectures</th>
+					<th>Completed Lectures</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Building Scalable APIs with GraphQL</td>
+					<td>85%</td>
+					<td>
+						<div class="progress-bar">
+							<div class="progress" style="width: 85%;"></div>
+						</div>
+						<span>56 / 65</span>
+					</td>
+					<td>
+						<button class="resume-btn">Resume</button>
+						<button class="restart-btn">Restart</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Create a Design System in Figma</td>
+					<td>100%</td>
+					<td>
+						<div class="progress-bar">
+							<div class="progress" style="width: 100%;"></div>
+						</div>
+						<span>42 / 42</span>
+					</td>
+					<td>
+						<button class="certificate-btn">View Certificate</button>
+					</td>
+				</tr>
+				<tr>
+					<td>The Complete Web Development in Python</td>
+					<td>60%</td>
+					<td>
+						<div class="progress-bar">
+							<div class="progress" style="width: 60%;"></div>
+						</div>
+						<span>28 / 47</span>
+					</td>
+					<td>
+						<button class="resume-btn">Resume</button>
+                        <button class="restart-btn">Restart</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+	<div id="pagination">
+		<span>Showing 1 to 8 of 20 entries</span>
+		<div class="page-navigation">
+		  <button class="previous-page">Previous</button>
+		  <div class="page-numbers">
+			<span class="current-page">1</span>
+			<span>2</span>
+			<span>3</span>
+			<!-- Add more page numbers here -->
+		  </div>
+		  <button class="next-page">Next</button>
+		</div>
+	  </div>
+</div>
+    <footer>
+    </footer>
+</body>
+</html>
