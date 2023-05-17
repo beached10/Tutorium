@@ -1,0 +1,129 @@
+/* Main styles */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer {
+    background-color: #F2F2F2;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footer-banner {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+  
+  .footer-header {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .footer-columns {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    width: calc(25% - 20px);
+    margin-bottom: 40px;
+  }
+  
+  .footer-links h2,
+  .footer-social h2,
+  .footer-tutorium h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links ul,
+  .footer-social ul,
+  .footer-tutorium ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-links li,
+  .footer-social li,
+  .footer-tutorium li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a,
+  .footer-social a,
+  .footer-tutorium a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-links a:hover,
+  .footer-social a:hover,
+  .footer-tutorium a:hover {
+    color: #000;
+  }
+  
+  .footer-links img,
+  .footer-social img,
+  .footer-tutorium img {
+    height: 16px;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Interactive styles */
+  .footer-links a:hover {
+    color: #ff6600;
+  }
+  
+  .footer-social a:hover {
+    color: #3b5998;
+  }
+  
+  .footer-social img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-tutorium a:hover {
+    color: #ff0000;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1100px) {
+    .footer-column {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .footer-column {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .footer-column {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,173 @@
+/* Set up basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h3 {
+  margin: 0;
+}
+
+/* Style the header */
+#chat-header {
+  background-color: #00bcd4;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+#close-chat-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Style the message container */
+.message-container {
+  margin: 1rem;
+}
+
+.sender-name {
+  font-weight: bold;
+}
+
+.message-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 0.5rem;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+  max-width: 75%;
+}
+
+.received {
+  align-self: flex-start;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #e0e0e0;
+}
+
+.message-date {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+
+
+/* Style the message form */
+.message-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.message-send {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.message-form input[type="text"],
+.message-form button[type="submit"] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f7f7f7;
+}
+
+.message-form input[type="text"] {
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.message-form button[type="submit"] {
+  background-color: #00bcd4;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-form button[type="submit"]:hover {
+  background-color: #0097a7;
+  scale: 1.1;
+}
+
+.message-options {
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+}
+.message-options.ellipsis-menu-icon img{
+  margin-left: 500px;
+}
+.message-options input[type="file"] {
+  display: none;
+}
+
+.message-options label {
+  font-size: 0;
+  margin-left: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.message-options img {
+  width: 20px;
+  height: 20px;
+}
+
+.message-options label:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.message-options label:hover:before {
+  opacity: 1;
+  
+}
+.message-item.sent .message-options label:before,
+.message-item.received .message-options label:before {
+  left: unset;
+  right: -20px;
+}
+
+.message-item.sent .message-options .delete-message-btn,
+.message-item.received .message-options .delete-message-btn {
+  margin-right: 1rem;
+}
+
+.message-item.sent .message-options .copy-message-btn,
+.message-item.received .message-options .copy-message-btn {
+  display: none;
+}
+.ellipsis-menu-icon img{
+  width: 10px;
+  height: 10px;
+}

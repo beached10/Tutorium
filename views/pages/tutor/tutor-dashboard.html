@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Dashboard</title>
+    <link rel="stylesheet" href="./css/tutor-dashboard.css">
+</head>
+<body> 
+    <header class="user-dashboard-header">
+        <div class="top-background"></div>
+        <div class="middle-top">
+            <div class="user-info">
+                <div class="picture-info">
+                    <div class="picture-wrapper">
+                        <img src="./img/profile.png" alt="profile-picture">
+                    </div>
+                    <span class="user-status">Pro</span>
+                    <div class="user-details">
+                        <span class="user-name">Vin Diesel</span>
+                        <span class="user-role">Tutor</span>
+                        <div class="user-credit">
+                            <span class="user-rating"><img src="/img/star.png" alt="rating-icon">4.5</span>
+                            <span class="user-followers"><img src="./img/followers.png" alt="follower-icon">10k followers</span>
+                            <span class="user-courses"><img src="./img/course.png" alt="course-icon">2 courses</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="middle-top-right">
+                <a href="#"><button class="course-btn">Create Course</button></a>
+            </div>
+        </div>
+        <div class="below-top">
+            <div class="left-menu">
+                <a href="#"><img src="#" alt="Home"></a>
+            </div>
+            <div class="right-dashboard">
+                <button id="dashboard-toggle"><img src="./img/dash.png" alt="dashboard-icon" id="dashboard-icon"></button>
+                <div class="dashboard-dropdown" id="dashboard-dropdown">
+                    <div class="user-profile">
+                        <h4>My profile</h4>
+                        <button class="close-button"><img src="./img/close.png" alt="close-icon"></button>
+                    </div>
+                    <ul>
+                      <li><a href="./student-dashboard.html"><img src="./img/dash.png" alt="dashboard-icon"> Dashboard</a></li>
+                      <li><a href="./student-course-view.html"><img src="./img/course.png" alt="course-icon"> My Courses</a></li>
+                      <li><a href="./img/"><img src="./img/students.png" alt="Students-icon">Students</a></li>
+                      <li><a href="#"><img src="./img/earnings.png" alt="earnings-icon">Earnings</a></li>
+                      <li><a href="#"><img src="./img/refollowers.png" alt="Refollowers-icon">Refollowers</a></li>
+                      <li><a href="#"><img src="./img/quiz.png" alt="Quiz-icon"> Quiz</a></li>
+                      <li><a href="#"><img src="./img/account-settings.png" alt="Account Settings-icon">Account Settings</a></li>
+                      <li><a href="#"><img src="./img/help.png" alt="Help-icon">Help</a></li>
+                      <li><a href="#" id="logout-link"><img src="./img/logout.png" alt="logout-icon">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <!-- Each dashboard selection will be displayed here, e.g., Course view page -->
+    </section>
+    <script src="./js/tutor-dashboard.js"></script>
+</body>
+</html>

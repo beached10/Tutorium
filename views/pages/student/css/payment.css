@@ -1,0 +1,293 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f8f8f8;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Order Summary Styles */
+.order-summary {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+  transform: translateZ(0);
+  position: relative;
+}
+
+.order-summary:hover{
+  transform: scale(1.1) translate(-10%, 0%);
+  z-index: 1;
+}
+
+
+.order-summary h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.order-summary p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.summary-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.summary-table td {
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.summary-table td:first-child {
+  padding-right: 20px;
+}
+
+.summary-table td:last-child {
+  text-align: right;
+  padding-left: 20px;
+}
+
+/* Payment Method Styles */
+.card-method {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+  transform: translateZ(0);
+  position: relative;
+}
+
+.card-method:hover {
+  transform: scale(1.1) translate(-50%, 0%);
+  z-index: 1;
+}
+
+.card-method h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card-method {
+  margin-bottom: 30px;
+}
+
+.card-method h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-method label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card-method input[type="text"],
+.card-method input[type="email"],
+.card-method input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-method .card-icons img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.card-method button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.card-method button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Payment Method Styles */
+.card-method {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+  transform: translateZ(0);
+  position: relative;
+}
+
+.card-method:hover {
+  transform: scale(1.1) translate(-50%, 0%);
+  z-index: 1;
+}
+
+.card-method h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card-method {
+  margin-bottom: 30px;
+}
+
+.card-method h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-method label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card-method input[type="text"],
+.card-method input[type="email"],
+.card-method input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-method .card-icons img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.card-method button[type="submit"] {
+  background-color: #003087;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.card-method button[type="submit"]:hover {
+  background-color: #003087;
+  opacity: 0.4;
+}
+
+.paypal-method {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+  transform: translateZ(0);
+  position: relative;
+  margin-top: 10px;
+  border: 1px solid transparent; /* Added */
+}
+
+.paypal-method:hover {
+  transform: scale(1.3) translate(50%, -50%);
+  z-index: 1;
+  border: 1px solid transparent; /* Added */
+}
+
+.paypal-method h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.paypal-method label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.paypal-method input[type="email"],
+.paypal-method input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.paypal-method button[type="submit"] {
+  background-color: #003087;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center; /* Added */
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.paypal-method button[type="submit"]:hover {
+  background-color: #002060;
+  opacity: 0.4;
+}
+
+.paypal-method img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .order-summary,
+  .payment-method {
+    width: 100%;
+    float: none;
+  }
+}

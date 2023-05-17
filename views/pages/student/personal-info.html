@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info</title>
+    <link rel="stylesheet" href="./css/personal-info.css">
+	<script src="#"></script>
+</head>
+<body>
+    <div class="container">
+		
+        <div class="dashboard-content"><!--dashboard-content on the left side of the screen-->
+            <div class="personal-info">
+                <img src="#" alt="Image Description">
+                <span class="user-name">Natalie Curtis</span>
+                <span class="user-role">Student</span>
+            </div>
+
+            <div class="account">
+            <h3>ACCOUNT</h3>
+            <ul>
+                <li><a href="#"><img src="#" alt="Personal info">Personal info</a></li>
+				<li><a href="#"><img src="#" alt="Security">Security</a></li>
+				<li><a href="#"><img src="#" alt="Notifications">Notifications</a></li>
+				<li><a href="#"><img src="#" alt="Subscription">Subscription</a></li>
+                <li><a href="#"><img src="#" alt="Subscription">Following</a></li>
+            </ul>
+            </div>
+            
+
+            <div class="Library">
+                <h3>LIBRARY</h3>
+            <ul>
+                <li><a href="#">Watched videos</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Saved videos</a></li>
+                <li><a href="#">Saved streams</a></li>
+            </ul>
+            </div>
+            
+            <div class="billing">
+                <h3>BILLING</h3>
+    
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </div>
+        </div>
+           
+            <div class="basic-info"><!-- basic-info content will be on the right side of the dashboard -->
+                <h2>Basic info</h2>
+                <div class="personal-info">
+                    <div class="user-update-photo">
+                        <label for="profile-photo">Profile photo</label>
+                        <img src="#" alt="Image Description">
+                        <button class="update-photo-btn"><input type="file" name="upload-photo" id="upload-photo">Upload photo</button>
+                        <button class="delete-photo-btn">Delete</button>
+                    </div>
+                    
+                    <span class="user-name">Natalie Curtis</span>
+                    <span class="user-role">Student</span>
+                </div>
+            <form >
+                <label for="fname">Full name:</label><br>
+                <input type="text" id="fname" name="fname" value="Natalie Curtis"><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" value="natalie@example.com"><br>
+    
+                <label for="phone">Phone (Optional):</label><br>
+                <input type="tel" id="phone" name="phone" value="+1(605)561-89-29"><br>
+    
+                <label for="mobile">Mobile:</label><br>
+                <input type="tel" id="mobile" name="mobile" value=""><br>
+    
+                <label for="gender">Gender:</label><br>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+    
+                <label for="bio">BIO:</label><br>
+                <textarea id="bio" name="bio"></textarea><br>
+
+                <h2>Disable ads</h2>
+                <p><input type="checkbox" name="disable-ads" id="disable-ads">
+                    With your Pro account, you can disable ads across the site.</p>
+
+            </form>
+                    <button class="save-changes-btn">Save changes</button>
+                    <button class="cancel-btn">Cancel</button>
+            </div>
+            
+            <div class="address"><!--address content will below  basic-info content-->
+                <h2>Address</h2>
+    
+            <label for="country">Location:</label><br>
+            <select id="country" name="country">
+                <option value="uk">United Kingdom</option>
+            </select>
+            <img src="https://www.countryflags.io/gb/flat/64.png" alt="United Kingdom Flag">
+            <p>United Kingdom</p>
+    
+            <label for="state">State:</label><br>
+            <input type="text" id="state" name="state" value="London"><br>
+            <label for="address1">Address line 1:</label><br>
+            <input type="text" id="address1" name="address1" value="45 Roker Terrace, Latheronwheel"><br>
+        
+            <label for="address2">Address line 2 (Optional):</label><br>
+            <input type="text" id="address2" name="address2" value=""><br>
+        
+            <label for="zipcode">Zip code:</label><br>
+            <input type="text" id="zipcode" name="zipcode" value="KW5 8NW"><br>
+
+            <button class="save-changes-btn">Save changes</button>
+            <button class="cancel-btn">Cancel</button>
+            </div>
+            
+        
+            <div class="privacy"><!-- privacy content will below  address content-->
+                <h2>Privacy</h2>
+        
+                <label for="profile-photo-privacy">Who can see your profile photo?</label><br>
+                <select id="profile-photo-privacy" name="profile-photo-privacy">
+                    <option value="anyone">Anyone</option>
+                    <option value="only-me">Only me</option>
+                </select><br>
+            </div>
+           
+
+            <div class="delete-account"><!--delete-account content will below  privacy  content-->
+            <h2>Delete your account</h2>
+            <p>When you delete your account, you lose access to Front account services, and we permanently delete your personal data. You can cancel the deletion for 14 days.</p>
+            <p><input type="checkbox" name="confirm-delete" id="confirm-delete">Confirm that I want to delete my account.</p>
+            <button id="delete-account-btn">Delete</button>
+            </div>
+            
+        
+     </div>
+    
+</body>
+</html>

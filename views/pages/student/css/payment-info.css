@@ -1,0 +1,528 @@
+/* payment-info.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Main Styles */
+main {
+  padding: 20px;
+}
+
+/* Payment Methods Section */
+#payment-methods {
+  margin-bottom: 40px;
+}
+
+.payment-methods-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-method {
+  width: 48%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.payment-method h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+.card-payment,
+.paypal-payment {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.add-card,
+.add-paypal {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-card:hover,
+.add-paypal:hover {
+  background-color: #555;
+}
+
+.added-cards,
+.added-paypal {
+  margin-top: 50px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+
+}
+
+.added-cards label[for="cards"],
+.added-paypal label[for="paypal"]{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.added-cards ul,
+.added-paypal ul {
+  list-style: none;
+  padding: 0;
+}
+
+.added-cards li,
+.added-paypal li {
+  margin-bottom: 10px;
+}
+
+.added-cards .card-details,
+.added-paypal .paypal-details {
+  display: flex;
+  align-items: center;
+}
+
+.added-cards .card-details input[type="checkbox"],
+.added-paypal .paypal-details input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.added-cards .card-icon,
+.added-paypal .paypal-icon {
+  width: 24px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.added-cards .card-number,
+.added-paypal .paypal-email {
+  font-size: 14px;
+  color: #555;
+}
+
+.added-cards .card-number::before {
+  content: "**** **** **** ";
+  font-weight: bold;
+}
+
+
+
+.added-cards .card-details input[type="checkbox"]:checked + .card-icon,
+.added-paypal .paypal-details input[type="checkbox"]:checked + .paypal-icon {
+  opacity: 0.5;
+}
+
+.added-cards .card-details input[type="checkbox"]:checked + .card-icon:hover,
+.added-paypal .paypal-details input[type="checkbox"]:checked + .paypal-icon:hover {
+  opacity: 1;
+}
+
+
+/* Card Details Form */
+.card-details form {
+  margin-top: 30px;
+}
+
+.card-details label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.card-number-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.card-icons {
+  margin-top: 10px;
+}
+
+.card-icons img {
+  width: 24px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.card-payment img{
+  width: 40px;
+  height: 40px;
+}
+
+.card-payment label[for="debit-credit"],
+.paypal-payment label[for="paypal"]{
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+ 
+}
+.buttons {
+  margin-top: 30px;
+}
+
+.paypal-details button {
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 4px;
+  transition: background-color 0.4s ease;
+
+  
+}
+
+.paypal-details .buttons button[type="submit"] {
+  background-color: #4fbd69;
+  color: #fff;
+}
+
+.paypal-details button.cancel {
+  background-color: #f9dde0;
+  color: #e22424;
+}
+
+
+.paypal-details button.cancel:hover {
+  background-color: #d62f40;
+  color: white;
+}
+.paypal-details .buttons button[type="submit"]:hover  {
+  background-color: #17b63c;
+  
+}
+
+.paypal-details button:focus {
+  outline: none;
+}
+
+.paypal-details button:active {
+  transform: translateY(1px);
+}
+
+#card-number ,
+#card-expiration-date,
+#card-cvv,
+#card-name,
+#card-billing-address,
+#paypal-email,
+#address-street,
+#address-city,
+#address-state,
+#address-zip {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  color: #555;
+}
+
+#card-number:focus,
+#card-expiration-date:focus,
+#card-cvv:focus,
+#card-name:focus,
+#card-billing-address:focus,
+#paypal-email:focus,
+#address-street:focus,
+#address-city:focus,
+#address-state:focus,
+#address-zip:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #aaa;
+}
+
+#card-number ::placeholder,
+#card-expiration-date::placeholder,
+#card-cvv::placeholder,
+#card-name::placeholder,
+#card-billing-address::placeholder,
+#paypal-email::placeholder,
+#address-street::placeholder,
+#address-city::placeholder,
+#address-state::placeholder,
+#address-zip::placeholder {
+  color: #999;
+}
+
+
+
+.card-details button {
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 4px;
+  transition: background-color 0.4s ease;
+
+  
+}
+
+.card-details .buttons button[type="submit"]{
+  background-color: #4fbd69;
+  color: #fff;
+}
+
+.card-details button.cancel {
+  background-color: #f9dde0;
+  color: #e22424;
+}
+
+
+.card-details button.cancel:hover {
+  background-color: #d62f40;
+  color: white;
+}
+.card-details .buttons button[type="submit"]:hover   {
+  background-color: #17b63c;
+  
+}
+
+.card-details button:focus {
+  outline: none;
+}
+
+.card-details button:active {
+  transform: translateY(1px);
+}
+
+/* PayPal Details Form */
+.paypal-details form {
+  margin-top: 20px;
+}
+
+.paypal-details label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.paypal-payment img{
+  width: 40px;
+  height: 40px;
+}
+
+
+
+/* Billing Address Section */
+#billing-address {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.add-billing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.add-billing h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.add-address {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-address:hover {
+  background-color: #555;
+}
+
+
+.billing-address {
+  display: block;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+
+.select-billing-address {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+
+}
+
+.select-billing-address label {
+  margin-left: 10px;
+}
+
+.address-name label{
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  
+  
+}
+
+.select-billing-address input[type="radio"] {
+  margin-right: 5px;
+}
+
+.address-details {
+  display: flex;
+  align-items: center;
+}
+
+.address-details label {
+  margin-bottom: 5px;
+  flex: 1;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.billing-address button,
+.added-paypal button,
+.added-cards button{
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: opacity 0.3s ease;
+  margin-left: 10px;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.billing-address button:hover,
+.added-paypal button:hover,
+.added-cards button:hover {
+  opacity: 0.6;
+}
+
+.billing-address .edit-address,
+.added-paypal .edit-paypal,
+.added-cards .edit-card {
+  background-color: #4896e9;
+}
+
+.billing-address .delete-address,
+.added-paypal .delete-paypal,
+.added-cards .delete-card  {
+  background-color: #e94f5f;
+}
+
+.billing-address button:before,
+.added-paypal button:before,
+.added-cards button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('path/to/edit-icon.png'); /* Replace with the actual path to your edit icon image */
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+}
+
+.billing-address .delete-address:before,
+.added-paypal button .delete-paypal:before,
+.added-cards button .delete-card:before {
+  background-image: url('path/to/delete-icon.png'); /* Replace with the actual path to your delete icon image */
+}
+
+.billing-address button:hover:before,
+.added-paypal button:hover:before,
+.added-cards button:hover:before {
+  opacity: 1;
+}
+
+.address-details button {
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 4px;
+  transition: background-color 0.4s ease;
+
+  
+}
+
+.address-details .buttons button[type="submit"]{
+  background-color: #4fbd69;
+  color: #fff;
+}
+
+.address-details button.cancel {
+  background-color: #f9dde0;
+  color: #e22424;
+}
+
+
+.address-details button.cancel:hover {
+  background-color: #d62f40;
+  color: white;
+}
+.address-details .buttons button[type="submit"]:hover   {
+  background-color: #17b63c;
+  
+}
+
+.address-details button:focus {
+  outline: none;
+}
+
+.address-details button:active {
+  transform: translateY(1px);
+}

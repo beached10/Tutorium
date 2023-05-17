@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "path": "views/pages/account"
+    },
+    {
+      "path": "views/pages/subscription"
+    },
+    {
+      "path": "views/pages/common"
+    },
+    {
+      "path": "views/pages/tutor"
+    },
+    {
+      "path": "views/pages/student"
+    },
+    {
+      "path": "views/layouts"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "common"
+  }
+}

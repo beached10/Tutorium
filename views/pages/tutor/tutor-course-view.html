@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses List</title>
+    <link rel="stylesheet" href="./css/tutor-course-view.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Courses List</h1>
+        <div class="search-sort">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton" class="searchButton"><img src="./img/search-icon.png" alt="search"></button>
+            <select id="sortSelect">
+                <option value="">Sort by</option>
+                <option value="free">Free</option>
+                <option value="popular">Most popular</option>
+                <option value="viewed">Most Viewed</option>
+                <option value="newest">Newest</option>
+            </select>
+        </div>
+        <table id="coursesTable">
+            <thead>
+              <tr>
+                <th>Course Title</th>
+                <th>Enrolled</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="course1-video-link">
+                    <img src="./img/video1.png" alt="Course 1 Image" class="course-image">
+                    <div class="course-title">
+                      Building Scalable APIs with GraphQL
+                      <div class="lecture-info">
+                        <span class="lecture-count">20 lectures</span>
+                        <span class="lecture-progress">10 completed</span>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>18 students</td>
+                <td><span class="course-status course-status-live">Live</span></td>
+                <td>
+                  <img src="./img/edit.png" alt="Edit" class="action-icon">
+                  <img src="./img/delete.png" alt="Delete" class="action-icon">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="course2-video-link">
+                    <img src="./img/video2.png" alt="Course 2 Image" class="course-image">
+                    <div class="course-title">
+                      Bootstrap 5 From Scratch
+                      <div class="lecture-info">
+                        <span class="lecture-count">15 lectures</span>
+                        <span class="lecture-progress">0 completed</span>
+                      </div>
+                    </div>
+                  </a>
+                </td>
+                <td>0 students</td>
+                <td><span class="course-status course-status-disable">Disable</span></td>
+                <td>
+                  <img src="./img/edit.png" alt="Edit" class="action-icon">
+                  <img src="./img/delete.png" alt="Delete" class="action-icon">
+                </td>
+              </tr>
+              <!-- Add the rest of the table rows -->
+            </tbody>
+            
+            
+          </table>
+          
+        
+        <div id="pagination">
+            <span>Showing 1 to 8 of 20 entries</span>
+            <div class="page-navigation">
+              <button class="previous-page">Previous</button>
+              <div class="page-numbers">
+                <span class="current-page">1</span>
+                <span>2</span>
+                <span>3</span>
+                <!-- Add more page numbers here -->
+              </div>
+              <button class="next-page">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="tutor-dashboard.js"></script>
+</body>
+</html>

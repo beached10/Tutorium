@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message View</title>
+    <link rel="stylesheet" href="./css/message.css">
+  </head>
+  <body>
+    <div id="chat-header">
+      <h3>Message</h3>
+      <button id="close-chat-btn">X</button>
+    </div>
+    <main>
+      <div class="message-container">
+        <div class="message-sender">
+          <span class="sender-name">John</span>
+        </div>
+        <div class="message-list">
+          <div class="message-item received">
+            <div class="message-options">
+              <label for="message-controls">
+                <img src="./img/ellipsis-menu-icon.png" alt="ellipsis-menu">
+                <span class="delete-message-btn">Delete</span>
+              <span class="copy-message-btn">Copy</span>
+              </label>
+            </div>
+            <div class="message-text">Hi, how are you?</div>
+            <div class="message-date">May 2, 2023 at 10:00 AM</div>
+          </div>
+          <div class="message-item sent">
+            <div class="message-options">
+              <label for="message-controls">
+                <img src="./img/ellipsis-menu-icon.png" alt="ellipsis-menu">
+                <span class="delete-message-btn">Delete</span>
+              <span class="copy-message-btn">Copy</span>
+              </label>
+            </div>
+            <div class="message-text">I'm good, thanks for asking. How about you?</div>
+            <div class="message-date">May 2, 2023 at 10:10 AM</div>
+          </div>
+          <!-- more message items here -->
+        </div>
+        <form class="message-form">
+          <div class="message-send">
+            <input type="text" placeholder="Type your message here">
+            <button type="submit">Send</button>
+            <div class="message-options">
+              <label for="doc-upload">
+                <input type="file" id="doc-upload" accept="image/*,.doc,.docx,.pdf">
+                <img src="./img/file-upload.png" alt="file upload icon">
+              </label>
+            </div>
+            
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./js/message.js"></script>
+  </body>
+</html>

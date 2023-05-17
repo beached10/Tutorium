@@ -1,0 +1,346 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.user-dashboard-header {
+  background-color: #f5f5f5;
+  padding: 20px;
+  position: relative;
+}
+
+.top-background {
+  background-color: #003087;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.user-info{
+  margin-top: 70px;
+}
+
+.middle-top-right {
+  margin-top: 100px;
+}
+
+.user-dashboard-header .middle-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-dashboard-header .middle-top .user-info {
+  display: flex;
+  align-items: center;
+}
+.picture-info {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+}
+
+.picture-wrapper {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+}
+
+.picture-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+.user-dashboard-header .middle-top .user-info .user-status {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 10%;
+  margin-left: -30px;
+}
+
+.user-name{
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+.user-credit {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+
+.user-credit .user-rating,
+.user-credit .user-followers,
+.user-credit .user-follow,
+.user-credit .user-courses {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.user-credit img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: center;
+}
+
+
+
+.user-dashboard-header .middle-top .user-info .user-details {
+  margin-top: 10px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+
+
+.user-dashboard-header .middle-top .user-info .user-details {
+  margin-top: 10px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.user-dashboard-header .middle-top .user-info .user-details .user-name {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.user-dashboard-header .middle-top .user-info .user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-dashboard-header .middle-top .user-info .user-role {
+  font-size: 16px;
+  color: black;
+  margin-right: 10px;
+}
+
+.user-dashboard-header .middle-top .user-info .user-completed-lesson {
+  font-size: 14px;
+  color: black;
+}
+
+.course-btn{
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #1d71c4;
+  text-decoration: none;
+  transition: background-color 0.4s ease;
+
+}
+
+.user-dashboard-header .middle-top-right button {
+  border: 1px solid #1d71c4;
+}
+
+
+.course-btn:hover {
+  background-color: #1d71c4;
+  color: white;
+  
+  
+}
+
+
+
+
+.user-dashboard-header .below-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.left-menu img{
+  width: 35px;
+  height: 35px;
+}
+
+.user-dashboard-header .below-top .left-menu {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.user-dashboard-header .below-top .left-menu a {
+  font-size: 20px;
+  color: black;
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+.user-dashboard-header .below-top .right-dashboard button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.user-dashboard-header .below-top .right-dashboard button img {
+  width: 35px;
+  height: 35px;
+  
+}
+
+.right-dashboard {
+  position: relative;
+}
+
+#dashboard-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  z-index: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease-in-out;
+  min-width: 300px; /* Adjust the width as needed */
+}
+
+.dashboard-dropdown .user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px 5px 0 0;
+}
+
+.dashboard-dropdown .user-profile h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.dashboard-dropdown .close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: flex;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  transition: opacity 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-dropdown .close-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.dashboard-dropdown .close-button:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+.dashboard-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+  overflow: scroll;
+}
+
+.dashboard-dropdown ul li {
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-dropdown ul li:last-child {
+  margin-bottom: 0;
+}
+
+.dashboard-dropdown ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-dropdown ul li a:hover {
+  background-color: #f2f2f2;
+}
+
+.dashboard-dropdown ul li a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+#logout-link {
+  color: red;
+}
+
+#logout-link:hover{
+  color: red;
+  background-color: rgb(243, 199, 199);
+}
+
+
+#dashboard-toggle.active + #dashboard-dropdown {
+  display: block;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

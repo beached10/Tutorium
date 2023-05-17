@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tutor Earnings</title>
+  <link rel="stylesheet" href="./css/earnings.css">
+</head>
+<body>
+  <div class="container">
+    <div class="earnings-summary">
+      <div class="summary-item">
+        <h2>Number of Viewers</h2>
+        <p class="value" id="viewersValue">100</p>
+      </div>
+      <div class="summary-item">
+        <h2>Enrolled Students</h2>
+        <p class="value" id="studentsValue">10</p>
+      </div>
+      <div class="summary-item">
+        <h2>Followers</h2>
+        <p class="value" id="followersValue">50</p>
+      </div>
+      <div class="summary-item">
+        <h2>Lessons</h2>
+        <p class="value" id="lessonsValue">10</p>
+      </div>
+      <div class="summary-item">
+        <h2>Courses</h2>
+        <p class="value" id="coursesValue">3</p>
+      </div>
+      <div class="summary-item">
+        <h2>Engagement Rate</h2>
+        <p class="value" id="engagementRateValue">0%</p>
+      </div>
+    </div>
+    <div class="earnings-details">
+      <h2>Earnings per Lesson</h2>
+      <p class="earning-value" id="earningPerLessonValue">$12</p>
+      <h2>Projected Total Earnings per Month</h2>
+      <p class="earning-value" id="totalEarningsPerMonthValue">$120</p>
+    </div>
+    <div class="earnings-chart">
+        <div id="lastMonthEarnings" class="last-month">
+            <label for="last-month">Last Month</label>
+            <p class="earnings-value">$28,000</p>
+            <p class="percentage-difference">0.10% vs current month</p>
+          </div>
+        <div id="currentMonthEarnings" class="current-month">
+            <label for="current-month">Current Month</label>
+          <p class="earnings-value">$35,000</p>
+          <p class="percentage-difference">0.20% vs last month</p>
+        </div>
+       
+        <canvas id="earnings-chart"></canvas>
+      </div>
+      
+      
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/earnings.js"></script>
+</body>
+</html>

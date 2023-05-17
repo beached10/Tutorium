@@ -1,0 +1,210 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Earnings Summary */
+.earnings-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+    
+  }
+  
+  /* Summary Item */
+  .summary-item {
+    background-color: #e2f2f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    font-family: 'Arial', sans-serif;
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .summary-item p{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .summary-item {
+    animation-name: slide-up;
+  }
+  
+  .summary-item h2 {
+    margin-top: 0;
+  }
+  
+  /* Earnings Details */
+  .earnings-details {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .earning-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .earning-value {
+    animation-name: slide-up;
+    animation-delay: 0.2s;
+  }
+  
+
+/* Earnings Chart */
+.earnings-chart {
+    text-align: center;
+    position: relative;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+  }
+  .current-month label,
+  .last-month label{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(22, 126, 218);
+    padding: 5px;
+    border-radius: 5%;
+    color: white;
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .current-month .earnings-value{
+    color: #3498db;
+  }
+
+
+  .current-month,
+  .last-month {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .last-month {
+    animation-name: fade-in;
+  }
+  
+  .current-month {
+    animation-name: fade-in;
+    animation-delay: 0.2s;
+  }
+  
+  .earnings-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .percentage-difference {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Customizing the Chart.js tooltip */
+  #earnings-chart .chartjs-tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  #earnings-chart .chartjs-tooltip:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    border-width: 6px 6px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent;
+  }
+  
+  #earnings-chart .chartjs-tooltip:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    transform: translateX(-50%);
+    border-width: 4px 4px 0;
+    border-style: solid;
+    border-color: #fff transparent transparent;
+  }
+  
+  #earnings-chart:hover .chartjs-tooltip {
+    opacity: 1;
+  }
+  
+  #earnings-chart .chartjs-tooltip:hover:before,
+  #earnings-chart .chartjs-tooltip:hover:after {
+    border-color: rgba(0, 0, 0, 0.8) transparent #fff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .earnings-summary {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

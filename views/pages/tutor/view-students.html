@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Students List</title>
+  <link rel="stylesheet" href="./css/view-students.css">
+</head>
+<body>
+    <div class="container">
+        <h2>My Student List</h2>
+        <header>
+            <div class="search">
+              <input type="text" placeholder="Search...">
+              <button class="submit-btn"><img src="./img/search-icon.png" alt="search-icon"></button>
+            </div>
+            <div class="sort-by">
+              <span>Sort by:</span>
+              <select>
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="free">Followers</option>
+              </select>
+            </div>
+          </header>
+          <main>
+            <table>
+              <thead>
+                <tr>
+                  <th>Student name</th>
+                  <th>Courses</th>
+                  <th>Enrolled date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="user-info">
+                        <a href=""><img src="./img/profile.png" alt="Lori Stevens"></a>
+                      <div class="user-details">
+                        <h2>Lori Stevens</h2>
+                        <p>Mumbai</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>10</td>
+                  <td>4/1/2023</td>
+                  <td>
+                    <div class="action-icons">
+                        <button id="messege" class="messege-btn"> <a href=""><img src="./img/message.png" alt="Message icon"></a></button>
+                        <button id="block" class="block-btn"><img src="./img/block.png" alt="Block icon"></button>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                    <div class="user-info">
+                    <a href=""> <img src="./img/person.jpeg" alt="Dennis Barrett"></a>
+                      <div class="user-details">
+                        <h2>Dennis Barrett</h2>
+                        <p>New York</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>12</td>
+                  <td>9/1/2023</td>
+                  <td>
+                    <div class="action-icons">
+                        <button id="messege" class="messege-btn"> <a href=""><img src="./img/message.png" alt="Message icon"></a></button>
+                        <button id="block" class="block-btn"><img src="./img/block.png" alt="Block icon"></button>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                    <div class="user-info">
+                    <a href="">  <img src="billy-vasquez.jpg" alt="Billy Vasquez"></a>
+                      <div class="user-details">
+                        <h2>Billy Vasquez</h2>
+                        <p>Paris</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>8</td>
+                  <td>10/1/2023</td>
+                  <td>
+                    <div class="action-icons">
+                        <button id="messege" class="messege-btn"> <a href=""><img src="./img/message.png" alt="Message icon"></a></button>
+                        <button id="block" class="block-btn"><img src="./img/block.png" alt="Block icon"></button>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                    <div class="user-info">
+                    <a href=""><img src="carolyn-ortiz.jpg" alt="Carolyn Ortiz"></a>
+                      <div class="user-details">
+                        <h2>Carolyn Ortiz</h2>
+                        <p>Delhi</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td> 6
+                     <td>20/1/2023</td>
+                     <td>
+                        <div class="action-icons">
+                            <button id="messege" class="messege-btn"> <a href=""><img src="./img/message.png" alt="Message icon"></a></button>
+                            <button id="block" class="block-btn"><img src="./img/block.png" alt="Block icon"></button>
+                        </div>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-info">
+                        <a href=""> <img src="larry-lawson.jpg" alt="Larry Lawson"></a>
+                        <div class="user-details">
+                          <h2>Larry Lawson</h2>
+                          <p>London</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>4</td>
+                    <td>12/1/2023</td>
+                    <td>
+                        <div class="action-icons">
+                            <button id="messege" class="messege-btn"> <a href=""><img src="./img/message.png" alt="Message icon"></a></button>
+                            <button id="block" class="block-btn"><img src="./img/block.png" alt="Block icon"></button>
+                        </div>
+                      </td>
+                      
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-info">
+                        <a href=""> <img src="frances-guerrero.jpg" alt="Frances Guerrero"></a>
+                        <div class="user-details">
+                          <h2>Frances Guerrero</h2>
+                          <p>Pune</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>14</td>
+                    <td>8/1/2023</td>
+                    <td>
+                        <div class="action-icons">
+                            <button id="messege" class="messege"> <a href=""><img src="./img/message.png" alt="Message icon"></a></button>
+                            <button id="block" class="block"><img src="./img/block.png" alt="Block icon"></button>
+                        </div>
+                      </td>
+                      
+                  </tr>
+                </tbody>
+              </table>
+              <div id="pagination">
+                <span>Showing 1 to 8 of 20 entries</span>
+                <div class="page-navigation">
+                  <button class="previous-page">Previous</button>
+                  <div class="page-numbers">
+                    <span class="current-page">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <!-- Add more page numbers here -->
+                  </div>
+                  <button class="next-page">Next</button>
+                </div>
+            </div>
+            </main>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Review</title>
+  <link rel="stylesheet" href="./css/view-reviews.css">
+</head>
+<body>
+  <div class="container">
+  
+
+    <div class="sort-section">
+        <h2>Student Review</h2>
+      <label for="sortSelect">Sort by:</label>
+      <select id="sortSelect">
+        <option value="5">★★★★★ (5/5)</option>
+        <option value="4">★★★★☆ (4/5)</option>
+        <option value="3">★★★☆☆ (3/5)</option>
+        <option value="2">★★☆☆☆ (2/5)</option>
+        <option value="1">★☆☆☆☆ (1/5)</option>
+      </select>
+    </div>
+
+    <div class="review-section">
+        <div class="review">
+          <div class="review-info">
+            <div class="user-picture">
+              <img src="./img/profile.png" alt="user-picture">
+            </div>
+            <div class="info-content">
+              <h2 id="name1" class="name">Frances Guerrero</h2>
+              <p id="date1" class="date">June 11, 2021 at 6:01 am</p>
+            </div>
+            <div id="rating1" class="rating">
+                <span class="star">★★★★★ (5/5)</span>
+              </div>
+          </div>
+          <div class="review-content">
+           
+            <h3 id="title1" class="title">Review on: How to implement sitemap on sass</h3>
+            <p id="content1" class="content">Satisfied conveying a dependent contented he gentleman agreeable do be. Warrant private blushes removed an in equally totally if. Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do.</p>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="direct-message"><a href="">Direct Message</a></button>
+          <button class="reply">Reply</button>
+        </div>
+        <div class="comment-section">
+          <div class="comment-box">
+            <textarea placeholder="Add a comment..."></textarea>
+            <button type="submit"><img src="./img/send.png" alt="send-icon"></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="review-section">
+        <div class="review">
+          <div class="review-info">
+            <div class="user-picture">
+              <img src="./img/profile.png" alt="user-picture">
+            </div>
+            <div class="info-content">
+              <h2 id="name2" class="name">Louis Ferguson</h2>
+              <p id="date2" class="date">June 18, 2021 at 11:55 am</p>
+            </div>
+            <div id="rating2" class="rating">
+                <span class="star">★★★★☆ (4/5)</span>
+              </div>
+           
+          </div>
+          <div class="review-content">
+            <h3 id="title2" class="title">Review on: How does an Angular application work?</h3>
+            <p id="content2" class="content">Far advanced settling say finished raillery. Offered chiefly farther Satisfied conveying a dependent contented he gentleman agree able do be. Warrant private blushes removed an in equally totally if. Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do.</p>
+          </div>
+        </div>
+        <div class="actions">
+            <button class="direct-message"><a href="">Direct Message</a></button>
+            <button class="reply">Reply</button>
+          </div>
+          <div class="comment-section">
+            <div class="comment-box">
+              <textarea placeholder="Add a comment..."></textarea>
+              <button type="submit"><img src="./img/send.png" alt="send-icon"></button>
+            </div>
+          </div>
+      </div>
+      
+      
+    </div>
+
+    <!-- Add more review sections here -->
+
+    <div id="pagination">
+      <span>Showing 1 to 8 of 20 entries</span>
+      <div class="page-navigation">
+        <button class="previous-page">Previous</button>
+        <div class="page-numbers">
+          <span class="current-page">1</span>
+          <span>2</span>
+          <span>3</span>
+          <!-- Add more page numbers here -->
+        </div>
+        <button class="next-page">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/view-reviews.js"></script>
+</body>
+</html>
+

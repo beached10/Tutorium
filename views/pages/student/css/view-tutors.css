@@ -1,0 +1,303 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Tutor list styles */
+  .tutor-list-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .tutor-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    color: white;
+    padding-left: 600px;
+    padding-right: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(16, 136, 210);
+    border-radius: 10px;
+  }
+
+  
+  
+  .tutor-list h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .tutor-list a {
+    text-decoration: none;
+    color: #f3eded;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .tutor-list {
+    display: inline-block;
+    align-items: center;
+  }
+.tutor-list a,
+.tutor-list h3 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #f3eded;
+  display: inline-block;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 1em;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    margin-right: 0.5em;
+  }
+  
+  nav select {
+    font-size: 1em;
+    padding: 0.25em;
+    border-radius: 4px;
+    border:none;
+    margin-right: 0.5em;
+  }
+  
+  nav button[type="submit"] {
+    background-color: #2594d8;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  nav input[type="text"] {
+    font-size: 1em;
+    padding: 0.25em;
+    border-radius: 4px;
+    border:none;
+    margin-right: 0.5em;
+    margin-left: 10px;
+  }
+  
+  nav img {
+    height: 1em;
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      flex-wrap: wrap;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav li {
+      margin-right: 0;
+      margin-bottom: 0.5em;
+    }
+  
+    nav li:last-child {
+      margin-bottom: 0;
+    }
+  
+    nav a {
+      margin-right: 0;
+      margin-bottom: 0.5em;
+    }
+  
+    nav select {
+      margin-right: 0;
+      margin-bottom: 0.5em;
+    }
+  
+    nav input[type="text"] {
+      margin-right: 0;
+      margin-bottom: 0.5em;
+    }
+  }
+  
+  
+  
+  /* Main styles */
+  main {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .Tutor {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .Tutor:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .Tutor img {
+    width: 100%;
+    height: auto;
+  }
+  .Tutor ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Tutor ul img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+  }
+  
+  
+  .Tutor .info {
+    padding: 20px;
+  }
+  
+  .Tutor h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  }
+  
+  .Tutor p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+  p.occupation{
+    color: rgb(210, 150, 30);
+  }
+
+  .Tutor .rating {
+    position:inherit;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .Tutor .rating img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .Tutor .rating span {
+    font-size: 16px;
+  }
+.Tutor .price {
+font-size: 24px;
+font-weight: bold;
+margin-top: 10px;
+}
+
+
+/* Pagination */
+#pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+}  
+
+.page-navigation button {
+  margin-left: 20px;
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.page-numbers {
+  display: flex;
+}
+
+.page-numbers span {
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.page-numbers span.current-page {
+  background-color: #ddd;
+}
+
+.page-navigation button:hover,
+.page-numbers span:hover {
+  background-color: #e5e5e5;
+}
+
+
+
+/* Footer styles */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer a {
+color: #fff;
+text-decoration: none;
+}
+   
+  

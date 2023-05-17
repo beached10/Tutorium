@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Payment Information Page</title>
+    <link rel="stylesheet" href="./css/payment-info.css" />
+  </head>
+  <body>
+    <header>
+    
+    </header>
+
+    <main>
+      <section id="payment-methods">
+        <h2>Payment Methods</h2>
+        
+        <div class="payment-methods-container">
+          <div class="payment-method">
+            <div class="card-payment">
+                <label for="debit-credit">Debit or Credit Card</label>
+                <button class="add-card">Add Card</button>
+            </div>
+           
+            <div class="card-details">
+              <form>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required />
+                <label for="card-expiration-date">Expiration Date:</label>
+                <input type="text" id="card-expiration-date" required />
+                <label for="card-cvv">CVV:</label>
+                <input type="text" id="card-cvv" required />
+                <label for="card-name">Name on Card:</label>
+                <input type="text" id="card-name" required />
+                <label for="card-billing-address">Billing Address:</label>
+                <input type="text" id="card-billing-address" required />
+               
+                <div class="buttons">
+                  <button type="submit">Save</button>
+                  <button class="cancel">Cancel</button>
+                </div>
+              </form>
+            </div>
+            <div class="added-cards">
+                <label for="cards">My Cards:</label>
+                <ul id="card-list">
+                  <li>
+                    <div class="card-details">
+                      <input type="checkbox" id="card1" name="card" value="card1" />
+                      <img src="./img/visa.png" alt="Visa" class="card-icon" />
+                      <span class="card-number">1234</span>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card-details">
+                      <input type="checkbox" id="card2" name="card" value="card2" />
+                      <img src="./img/mastercard.png" alt="Mastercard" class="card-icon" />
+                      <span class="card-number">5678</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="controls">
+                    <button class="edit-card">Edit</button>
+                    <button class="delete-card">Delete</button>
+                </div>
+                
+              </div>
+          </div>
+          <div class="payment-method">
+            <div class="paypal-payment">
+                <label for="paypal">PayPal</label>
+                <button class="add-paypal">Add PayPal</button>
+            </div>
+            
+          
+            <div class="paypal-details">
+              <form>
+                <label for="paypal-email">PayPal Email:</label>
+                <input type="email" id="paypal-email" required />
+                <div class="buttons">
+                  <button type="submit">Save</button>
+                  <button class="cancel">Cancel</button>
+                </div>
+              </form>
+            </div>
+            <div class="added-paypal">
+                <label for="paypal">My PayPal:</label>
+                <ul id="paypal-list">
+                  <li>
+                    <div class="paypal-details">
+                      <input type="checkbox" id="paypal1" name="paypal" value="paypal1" />
+                      <span class="paypal-email">example@example.com</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="paypal-details">
+                      <input type="checkbox" id="paypal2" name="paypal" value="paypal2" />
+                      
+                      <span class="paypal-email">user@example.com</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="controls">
+                    <button class="edit-paypal">Edit</button>
+                    <button class="delete-paypal">Delete</button>
+                </div>
+                
+              </div>
+          </div>
+         
+          
+        </div>
+        
+      </section>
+
+      <section id="billing-address">
+        <div class="add-billing">
+            <h2>Billing Address</h2>
+            <button class="add-address">Add Address</button>
+        </div>
+        
+        <div class="billing-address-container">
+         
+          <div class="address-details">
+            <form>
+              <label for="address-street">Street:</label>
+              <input type="text" id="address-street" required />
+              <label for="address-city">City:</label>
+              <input type="text" id="address-city" required />
+              <label for="address-state">State:</label>
+              <input type="text" id="address-state" required />
+              <label for="address-zip">ZIP:</label>
+              <input type="text" id="address-zip" required />
+              <div class="buttons">
+                <button type="submit">Save</button>
+                <button class="cancel">Cancel</button>
+              </div>
+            </form>
+          </div>
+          
+          <div class="billing-address">
+            <div class="select-billing-address">
+                <input type="radio" id="address1" name="billing-address" value="address1" checked />
+                <label for="address-name">Address-1</label>
+            </div>
+           
+            <label for="address1">123 Main Street, New York, NY 10001</label>
+            <div class="controls">
+            <button class="edit-address">Edit</button>
+            <button class="delete-address">Delete</button>
+            </div>
+            
+          </div>
+          <div class="billing-address">
+            <div class="select-billing-address">
+                <input type="radio" id="address2" name="billing-address" value="address2" />
+                <label for="address-name">Address-2</label>
+            </div>
+            
+            <label for="address2">456 Maple Ave, Los Angeles, CA 90001</label>
+            <div class="controls">
+                <button class="edit-address">Edit</button>
+                <button class="delete-address">Delete</button>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./payment-info.html"></script>
+</body>
+</html>
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="./css/student-edit-profile.css">
+  </head>
+  <body>
+   
+    <form action="#" method="POST">
+        <div class="edit-profile">
+            <h2>Edit Profile</h2>
+            <label for="profile-picture">Profile picture</label>
+            <div class="change-picture">
+                
+                <img src="./img/profile.png" alt="Profile picture" >
+                <div class="change-picture-btn">
+                  <span>Change</span>
+                  <input type="file" name="profile-picture"/>
+                </div>
+              </div>              
+      
+            <div>
+              <label for="full-name">Full Name:</label>
+              <input type="text" name="full-name" value="Lori Stevens" />
+            </div>
+            <div>
+              <label for="username">Username:</label>
+              <input type="text" name="username" value="loristev" />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" name="email" value="example@gmail.com" />
+            </div>
+            <div>
+              <label for="phone-number">Phone Number:</label>
+              <input type="tel" name="phone-number" value="1234567890" />
+            </div>
+            <div>
+              <label for="location">Location:</label>
+              <input type="text" name="location" value="California" />
+            </div>
+            <div>
+              <label for="about-me">About Me:</label>
+              <textarea name="about-me">
+                I’ve found a way to get paid for my favorite hobby, and do so while following my dream of traveling the world.
+              </textarea>
+            </div>
+            <div>
+                <label for="education">Education:</label>
+                <div id="education-fields">
+                  <div>
+                    <input type="text" name="education[]" placeholder="Bachelor in Computer Graphics">
+                  </div>
+                  <div>
+                    <input type="text" name="education[]" placeholder="Masters in Computer Graphics">
+                  </div>
+                </div>
+                <button type="button" class="add-more-btn" onclick="addEducation()">+ Add more</button>
+              </div>
+            <button type="submit">Save changes</button>
+        </div>
+
+        <div class="linked-accounts">
+            <div class="linked-accounts-left">
+                <h3>Linked Accounts</h3>
+                <div>
+                  <label for="google"><img src="./img/google-icon.png" alt="google-icon">Google</label>
+                  <p>You are successfully connected to your Google account</p>
+                  <button class="connect-google-btn"><a href="#"></a>Connect Google</button>
+                </div>
+                <div>
+                  <label for="linkedin"><img src="./img/linkedin-icon.png" alt="linkedin-icon">Linkedin</label>
+                  <p>Connect with Linkedin account for a personalized experience</p>
+                  <button class="connect-linkedin-btn"><a href="#"></a>Connect Linkedin</button>
+                </div>
+                <div>
+                  <label for="facebook"><img src="./img/facebook-icon.png" alt="facebook-icon">Facebook</label>
+                  <p>Connect with Facebook account for a personalized experience</p>
+                  <button class="connect-facebook-btn"><a href="#"></a>Connect Facebook</button>
+                </div>
+            </div>
+            <div class="Social-Media-Profile-right">
+                <h3>Social Media Profile</h3>
+                <div>
+                  <label for="facebook-username"><img src="./img/facebook-icon.png" alt="facebook-icon">Enter facebook username</label>
+                  <input type="text" name="facebook-username" value="loristev" />
+                </div>
+                <div>
+                  <label for="twitter-username"><img src="./img/twitter-icon.png" alt="twitter-icon">Enter twitter username</label>
+                  <input type="text" name="twitter-username" value="loristev" />
+                </div>
+                <div>
+                  <label for="instagram-username"><img src="./img/instagram-icon.png" alt="instagram-icon">Enter instagram username</label>
+                  <input type="text" name="instagram-username" value="loristev" />
+                </div>
+                <div>
+                  <label for="youtube-profile-url"><img src="./img/youtube-icon.png" alt="youtube-icon">Enter youtube profile URL:</label>
+                  <input
+                    type="url"
+                    name="youtube-profile-url"
+                    value="https://www.youtube.com/in/Eduport-05620abc"
+                  />
+                </div>
+                <button type="submit">Save changes</button>
+            </div>
+           
+        </div>
+ 
+     <div class="update-account">
+        <div class="update-email">
+          <h3>Update Email</h3>
+          <span class="current-email">Your current email address is example@gmail.com</span>
+          <label for="new-email">Enter your new email id:</label>
+          <input type="email" name="new-email" placeholder="Enter new email" />
+          <button type="submit">Update email</button>
+          </div>
+
+          
+          <div>
+            <h3>Update Password</h3>
+          <label for="current-password">Current Password:</label>
+          <input type="password" name="current-password" placeholder="Enter current password" />
+          </div>
+          <div>
+          <label for="new-password">New Password:</label>
+          <input type="password" name="new-password" placeholder="Enter new password" />
+          </div>
+          <div>
+          <label for="confirm-new-password">Confirm New Password:</label>
+          <input type="password" name="confirm-new-password" placeholder="Confirm new password" />
+          </div>
+          <button type="submit">Change password</button>
+     </div>
+     
+        </form>
+        
+          </body>
+        </html>

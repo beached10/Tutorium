@@ -1,0 +1,116 @@
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
+  
+  select {
+	font-family: 'Roboto', sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+  }
+  
+  
+body {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #f2f2f2;
+}
+
+.container {
+	width: 100%;
+	max-width: 420px;
+	margin: 0 auto;
+}
+
+form {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.terms {
+	font-size: 14px;
+	color: #999;
+	text-align: center;
+	margin-top: 20px;
+  }
+  
+.terms a {
+	color: #4484dd;
+	text-decoration: underline;
+	transition: color 0.3s ease;
+  }
+  
+.terms a:hover {
+	color: #265dab;
+  }
+  
+  
+form h1 {
+	margin-top: 0;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type='new-password'],
+input[type='confirm-password'] {
+	font-family: 'Roboto', sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+  }
+  .error {
+	border-color: red;
+	box-shadow: 0 0 5px red;
+  }
+  
+
+button[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+button[type="submit"]:hover {
+	background-color: #43A047;
+}
+
