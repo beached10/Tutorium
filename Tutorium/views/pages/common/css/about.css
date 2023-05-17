@@ -1,0 +1,251 @@
+/* notifications.css */
+
+/* Reset styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Notifications header */
+.notifications-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #6bdef5;
+  color: #fff;
+}
+
+.notifications-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.notifications-controls {
+  display: flex;
+  align-items: center;
+}
+
+.home-select-button {
+  margin-right: 1rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.home-select-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.home-select-button:hover,
+.select-all-notifications:hover,
+.mark-as-read:hover,
+.hide:hover,
+.delete-notifications:hover {
+  transform: scale(1.2);
+}
+
+
+
+.notifications-search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.notifications-search-input {
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  color: rgb(81, 81, 81);
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.notifications-search-input:focus {
+  border-color: #8fb4dc;
+}
+
+.notifications-search-button {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.notifications-search-button img {
+  width: 20px;
+  height: 20px;
+}
+.notifications-search-button img:hover {
+  scale: 1.2;
+}
+
+.notifications-list {
+  margin-top: 1rem;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.notification-item:hover {
+  background-color: #f0f0f0;
+}
+
+.notification-item label {
+  margin-right: 1rem;
+}
+
+.notification-sender {
+  display: flex;
+  align-items: center;
+}
+
+.notification-sender-profile {
+  margin-right: 1rem;
+}
+
+.notification-sender-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-role {
+  color: #777;
+}
+
+.notification-box {
+  flex: 1;
+}
+
+.link-to-notification {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.notification-text {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.notification-date {
+  color: #777;
+}
+/* Notification controls */
+
+.notifications-controls {
+  display: flex;
+  align-items: center;
+  }
+  
+  .select-all-notifications,
+  .mark-as-read,
+  .hide,
+  .delete-notifications {
+  margin-right: 1rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  }
+  
+  .select-all-notifications img,
+  .mark-as-read img,
+  .hide img,
+  .delete-notifications img {
+  width: 20px;
+  height: 20px;
+  }
+  
+  /* Notification mute button */
+  
+  .select-all-notifications:hover {
+  transform: scale(1.2);
+  color: #6bdef5;
+  }
+  
+  /* Notification mark as read button */
+  
+  .mark-as-read:hover {
+  transform: scale(1.2);
+  color: #6bdef5;
+  }
+  
+  /* Notification hide button */
+  
+  .hide:hover {
+  transform: scale(1.2);
+  color: #6bdef5;
+  }
+  
+  /* Notification delete button */
+  
+  .delete-notifications:hover {
+  transform: scale(1.2);
+  color: #f00;
+  }
+
+  .notification-item.read {
+    opacity: 0.5;
+    color: #777;
+    
+  }
+  
+  
+  /* Responsive design */
+  
+  @media screen and (max-width: 768px) {
+  .notifications-header {
+  flex-direction: column;
+  text-align: center;
+  }
+  
+  .notifications-header h1 {
+  margin-bottom: 1rem;
+  }
+  
+  .notifications-controls {
+  margin-top: 1rem;
+  }
+  
+  .notifications-search-form {
+  margin-right: 0;
+  }
+  }
+  
+  
+  
+  
+  
