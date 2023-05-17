@@ -1,0 +1,180 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+  }
+  
+  /* Dashboard content */
+  .dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .dashboard-sidebar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 20px;
+  }
+  
+  .dashboard-main {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  /* Personal info */
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .personal-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .user-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .user-role {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Account */
+  .account {
+    margin-bottom: 30px;
+  }
+  
+  .account h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .account ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .account li {
+    margin-bottom: 10px;
+  }
+  
+  .account a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s ease;
+  }
+  
+  .account a:hover {
+    color: #000;
+  }
+  
+  .account img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Library */
+  .library {
+    margin-bottom: 30px;
+  }
+  
+  .library h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .library ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .library li {
+    margin-bottom: 10px;
+  }
+  
+  .library a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s ease;
+  }
+  
+  .library a:hover {
+    color: #000;
+  }
+  
+  /* Billing */
+  .billing {
+    margin-bottom: 30px;
+  }
+  
+  .billing h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .billing ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .billing li {
+    margin-bottom: 10px;
+  }
+  
+  .billing a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s ease;
+  }
+  
+  .billing a:hover {
+    color: #000;
+  }
+  
+  .billing img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Basic info */
+  .basic-info {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items
+  
